@@ -5,9 +5,8 @@
     text-decoration: none;
 }
 
-
 body{
-    background-image: url(../img/calculadora.png);
+    background-color: cadetblue;
     background-position: center;
     background-size: cover;
     color: aliceblue;
@@ -32,6 +31,10 @@ h1{
     background-color: rgba(10, 10, 10, 0.95);
     border-radius: 15px;
     padding: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 td{
@@ -55,7 +58,7 @@ td{
 }
 
 #resultado{
-    width: 245px;
+    width: 30vw;
     height: 40px;
     background-color: aliceblue;
     margin-bottom: .7rem;
@@ -82,4 +85,42 @@ td{
 
 a{
     color: aliceblue;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    .calculadora {
+        top: 10%;
+    }
+    
+    #resultado {
+        width: 80vw;
+    }
+    
+    .small-message {
+        font-size: 50%;
+    }
+    
+    .table {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button {
+        width: 45px;
+        height: 45px;
+        font-size: medium;
+    }
+    
+    #H {
+        width: 80px;
+        height: 45px;
+        font-size: medium;
+    }
+    
+    .resultado {
+        font-size: 20px;
+    }
 }
